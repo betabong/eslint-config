@@ -1,5 +1,5 @@
 {
-	"name": "@betabong/eslint-config",
+	"name": "eslint-config-betabong",
 	"version": "0.0.1",
 	"author": "Severin Klaus <betabong@gmail.com> (https://github.com/betabong)",
 	"license": "MIT",

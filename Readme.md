@@ -1,8 +1,8 @@
-# @betabong/eslint-config
+# eslint-config-betabong
 
-[![npm](https://img.shields.io/npm/v/@betabong/eslint-config?color=a1b858&label=)](https://npmjs.com/package/@betabong/eslint-config)
+[![npm](https://img.shields.io/npm/v/eslint-config-betabong?color=a1b858&label=NPM)](https://npmjs.com/package/eslint-config-betabong)
 
-Based on [antfu/eslint-config](https://npmjs.com/package/@antfu/eslint-config), modifications in bold:
+Based on [antfu/eslint-config](https://npmjs.com/package/@antfu/eslint-config), apart from the following changes:
 
 -   **Semi quotes, no single**
 -   **Slightly less strict:** e.g. Only warn on unused vars
@@ -20,7 +20,7 @@ Other than that, it's the same as the original:
 ### Install
 
 ```bash
-yarn add -D eslint @betabong/eslint-config
+yarn add -D eslint eslint-config-betabong
 ```
 
 ### Config `.eslintrc`
