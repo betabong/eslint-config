@@ -2,12 +2,18 @@ module.exports = {
 	extends: ['plugin:json/recommended', '@antfu'],
 	rules: {
 		'no-console': 'off',
-		quotes: ['error', 'double'],
-		'@typescript-eslint/quotes': ['error', 'double'],
+		'no-cond-assign': ['error', 'except-parens'],
 		'no-unused-vars': 'warn',
-		'vue/no-unused-vars': 'warn',
-		'@typescript-eslint/no-unused-vars': ['warn'],
 		'no-tabs': 'off',
+		'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+		curly: ['error', 'multi-line'],
+		quotes: ['error', 'double'],
+		'max-len': [
+			'warn',
+			{
+				code: 100,
+			},
+		],
 		indent: [
 			'error',
 			'tab',
@@ -54,7 +60,13 @@ module.exports = {
 				offsetTernaryExpressions: true,
 			},
 		],
+		'antfu/if-newline': 'off',
 		'jsonc/indent': ['error', 'tab'],
+		'vue/html-indent': ['error', 'tab'],
+		'vue/require-v-for-key': 'warn',
+		'vue/no-unused-vars': 'warn',
+		'@typescript-eslint/quotes': ['error', 'double'],
+		'@typescript-eslint/no-unused-vars': ['warn'],
 		'@typescript-eslint/indent': [
 			'error',
 			'tab',
@@ -105,15 +117,5 @@ module.exports = {
 				offsetTernaryExpressions: true,
 			},
 		],
-		'vue/html-indent': ['error', 'tab'],
-		'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
-		curly: ['error', 'multi-line'],
-		'max-len': [
-			'warn',
-			{
-				code: 100,
-			},
-		],
-		'vue/require-v-for-key': 'warn',
 	},
 };
